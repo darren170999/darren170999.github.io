@@ -1,2 +1,4 @@
 # FullStackResume
-ReactJS-Django-MySQL
+
+## ReactJS with ChakraUI
+### Google Cloud Domain Hosting, Configured with DNS management, AJAX domain.
