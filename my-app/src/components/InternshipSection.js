@@ -23,7 +23,7 @@ const internships = [
     getImageSrc: () => require("../images/image_dsta.jpg"),
   },
   {
-    title: "Discovermarket",
+    title: "Discover Market Asia",
     description:
       "Software Engineer Intern",
     getImageSrc: () => require("../images/image_discovermarket.jpg"),
