@@ -8,7 +8,6 @@ import {
   faGoogleDrive,
 } from "@fortawesome/free-brands-svg-icons";
 import { Box, HStack } from "@chakra-ui/react";
-import { extendTheme } from "@chakra-ui/react";
 
 const socials = [
   {
