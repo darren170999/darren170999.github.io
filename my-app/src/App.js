@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import InternshipsSection from "./components/InternshipSection";
 import LandingSection from "./components/LandingSection";
-
 function App() {
   return (
     <ChakraProvider>
