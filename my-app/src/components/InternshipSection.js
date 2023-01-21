@@ -45,7 +45,7 @@ const InternshipsSection = () => {
       <Box
         color={"#1a1f71"}
         display="grid"
-        gridTemplateColumns="repeat(2,minmax(0,1fr))"
+        gridTemplateColumns="repeat(auto-fit,minmax(300px,1fr))"
         gridGap={8}
       >
         {internships.map((internship) => (
