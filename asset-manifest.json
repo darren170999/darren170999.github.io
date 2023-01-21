@@ -1,19 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.dd98569f.js",
+    "main.js": "/static/js/main.16638962.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/image_dsta.jpg": "/static/media/image_dsta.ed6dadb695c81c182d52.jpg",
     "static/media/image_visa.jpg": "/static/media/image_visa.ff0ba0d167828d032cc9.jpg",
+    "static/media/cert_cs50.jpg": "/static/media/cert_cs50.391a24af40be47515e15.jpg",
+    "static/media/cert_grpc.jpg": "/static/media/cert_grpc.f2c14f00483ffb5ef03d.jpg",
     "static/media/image_discovermarket.jpg": "/static/media/image_discovermarket.80c6d8850c494fb34d60.jpg",
     "static/media/image_jpmorgan.jpg": "/static/media/image_jpmorgan.3a814342c12d1327a737.jpg",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.dd98569f.js.map": "/static/js/main.dd98569f.js.map",
+    "main.16638962.js.map": "/static/js/main.16638962.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.dd98569f.js"
+    "static/js/main.16638962.js"
   ]
 }
