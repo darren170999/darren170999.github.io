@@ -17,6 +17,15 @@ const certs = [
     getImageSrc: () => require("../images/cert_grpc.jpg"),
   },
 ];
+//Responsive 
+const breakpoints = {
+  sm: '30em',
+  md: '48em',
+  lg: '62em',
+  xl: '80em',
+}
+
+
 
 const CertSection = () => {
   return (
@@ -32,8 +41,10 @@ const CertSection = () => {
       </Heading>
       <Box
         display="grid"
-        gridTemplateColumns="repeat(2,minmax(0,1fr))"
+        gridTemplateColumns="repeat(auto-fit,minmax(300px,1fr))"
         gridGap={8}
+        // width={['100%','50%','25%','15%']}
+        // height={[]}
       >
         {certs.map((cert) => (
           <CardInternship
