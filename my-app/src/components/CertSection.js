@@ -25,8 +25,6 @@ const breakpoints = {
   xl: '80em',
 }
 
-
-
 const CertSection = () => {
   return (
     <FullScreenSection
@@ -43,8 +41,6 @@ const CertSection = () => {
         display="grid"
         gridTemplateColumns="repeat(auto-fit,minmax(300px,1fr))"
         gridGap={8}
-        // width={['100%','50%','25%','15%']}
-        // height={[]}
       >
         {certs.map((cert) => (
           <CardInternship
