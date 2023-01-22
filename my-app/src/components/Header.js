@@ -7,8 +7,18 @@ import {
   faSquareReddit,
   faGoogleDrive,
 } from "@fortawesome/free-brands-svg-icons";
-import { Box, HStack } from "@chakra-ui/react";
-
+import { Box, HStack, Button } from "@chakra-ui/react";
+import {ChevronDownIcon} from "@chakra-ui/icons"
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+} from '@chakra-ui/react'
 const socials = [
   {
     icon: faEnvelope,
@@ -65,6 +75,19 @@ const Header = () => {
               </a>
             </HStack>
           </nav>
+          <Menu >
+            {({isOpen}) => (
+              <>
+              <MenuButton isActive={isOpen} as={Button} textColor={'#18181b'}
+              rightIcon={<ChevronDownIcon />} >
+                {isOpen ? 'Close' : 'Menu'}
+              </MenuButton>
+              <MenuList>
+                <MenuItem textColor={'#18181b'}>Coming soon</MenuItem>
+              </MenuList>
+              </>
+            )}
+          </Menu>
         </HStack>
       </Box>
     </Box>
