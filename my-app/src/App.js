@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import InternshipsSection from "./components/InternshipSection";
 import LandingSection from "./components/LandingSection";
+import { ReactDOM } from "react";
 function App() {
   return (
     <ChakraProvider>
