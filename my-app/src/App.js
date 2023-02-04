@@ -5,7 +5,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import InternshipsSection from "./components/InternshipSection";
 import LandingSection from "./components/LandingSection";
-import { ReactDOM } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+ 
 function App() {
   return (
     <ChakraProvider>
