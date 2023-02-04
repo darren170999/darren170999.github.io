@@ -8,13 +8,13 @@ const certs = [
     title: "CS50",
     description:
       "Hosted by Harvard University, Introduction to computer science by David J Malan.",
-    getImageSrc: () => require("../images/cert_cs50.jpg"),
+    getImageSrc: () => require("../../images/cert_cs50.jpg"),
   },
   {
-    title: "Google Remote Procedure Calls",
+    title: "GRPC",
     description:
       "Build modern API and microservices by Clement Jean",
-    getImageSrc: () => require("../images/cert_grpc.jpg"),
+    getImageSrc: () => require("../../images/cert_grpc.jpg"),
   },
 ];
 //Responsive 

@@ -1,20 +1,20 @@
-import {ChakraProvider} from "@chakra-ui/react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
-import CertSection from "./components/CertSection";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import InternshipsSection from "./components/InternshipSection";
-import LandingSection from "./components/LandingSection";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import MainPage from "./Main/MainPage";
+import {ChakraProvider} from "@chakra-ui/react";
  
-function App() {
+const App = () => {
   return (
     <ChakraProvider>
-      <Header />
-      <LandingSection />
-      <InternshipsSection />
-      <CertSection/>
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainPage/>}/>
+          <Route path="/internships" element={<></>}/>
+          <Route path="/certificates" element={<></>}/>
+          
+        </Routes>
+      </Router>
+
     </ChakraProvider>
   );
 }

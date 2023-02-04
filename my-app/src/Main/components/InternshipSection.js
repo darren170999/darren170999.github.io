@@ -8,25 +8,25 @@ const internships = [
     title: "JP Morgan Chase",
     description:
       "Software Engineer Intern (Global Payments Team)",
-    getImageSrc: () => require("../images/image_jpmorgan.jpg"),
+    getImageSrc: () => require("../../images/image_jpmorgan.jpg"),
   },
   {
     title: "VISA",
     description:
       "Software Engineer Intern (Value Added Services Team)",
-    getImageSrc: () => require("../images/image_visa.jpg"),
+    getImageSrc: () => require("../../images/image_visa.jpg"),
   },
   {
     title: "DSTA",
     description:
       "Software Engineer Intern (Digital Hub - AI and Autonomy Team)",
-    getImageSrc: () => require("../images/image_dsta.jpg"),
+    getImageSrc: () => require("../../images/image_dsta.jpg"),
   },
   {
     title: "Discover Market Asia",
     description:
       "Software Engineer Intern (Innovation Team)",
-    getImageSrc: () => require("../images/image_discovermarket.jpg"),
+    getImageSrc: () => require("../../images/image_discovermarket.jpg"),
   },
 ];
 
