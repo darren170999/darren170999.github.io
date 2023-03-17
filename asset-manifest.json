@@ -1,9 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.feb897c5.js",
+    "main.js": "/static/js/main.8cc6aa87.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/image_dsta.jpg": "/static/media/image_dsta.ed6dadb695c81c182d52.jpg",
+    "static/media/cert_Meta_Backend.jpg": "/static/media/cert_Meta_Backend.00c3dde2bbc4c6e2a162.jpg",
+    "static/media/cert_Meta_Frontend.jpg": "/static/media/cert_Meta_Frontend.63ca1e86896717410dcb.jpg",
+    "static/media/cert_GraphQL.jpg": "/static/media/cert_GraphQL.d4f8308262b51d5edb26.jpg",
+    "static/media/cert_AspNetCore.jpg": "/static/media/cert_AspNetCore.84034e9a0b207fe95fc7.jpg",
     "static/media/image_visa.jpg": "/static/media/image_visa.ff0ba0d167828d032cc9.jpg",
     "static/media/cert_cs50.jpg": "/static/media/cert_cs50.391a24af40be47515e15.jpg",
     "static/media/cert_grpc.jpg": "/static/media/cert_grpc.f2c14f00483ffb5ef03d.jpg",
@@ -11,11 +15,11 @@
     "static/media/image_jpmorgan.jpg": "/static/media/image_jpmorgan.3a814342c12d1327a737.jpg",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.feb897c5.js.map": "/static/js/main.feb897c5.js.map",
+    "main.8cc6aa87.js.map": "/static/js/main.8cc6aa87.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.feb897c5.js"
+    "static/js/main.8cc6aa87.js"
   ]
 }
