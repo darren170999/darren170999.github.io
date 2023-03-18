@@ -7,13 +7,13 @@ const internships = [
   {
     title: "JP Morgan Chase",
     description:
-      "Software Engineer Intern (Global Payments Team)",
+      "Incoming Software Engineer Intern",
     getImageSrc: () => require("../../images/image_jpmorgan.jpg"),
   },
   {
     title: "VISA",
     description:
-      "Software Engineer Intern (Value Added Services Team)",
+      "Software Engineer Intern (Value Added Services Product Development)",
     getImageSrc: () => require("../../images/image_visa.jpg"),
   },
   {
