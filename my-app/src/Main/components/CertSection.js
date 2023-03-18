@@ -7,13 +7,13 @@ const certs = [
   {
     title: "Meta Frontend",
     description:
-    "Build modern API and microservices by Clement Jean",
+    "This certificate was designed by the software engineering experts at Meta—the creators of Facebook and Instagram to prepare aspiring software engineers for a career in frontend development.",
     getImageSrc: () => require("../../images/cert_Meta_Frontend.jpg"),
   },
   {
     title: "Meta Backend",
     description:
-    "Build modern API and microservices by Clement Jean",
+    "This certificate was designed by the software engineering experts at Meta—the creators of Facebook and Instagram to prepare aspiring software engineers for a career in backend development.",
     getImageSrc: () => require("../../images/cert_Meta_Backend.jpg"),
   },
   {
@@ -23,21 +23,21 @@ const certs = [
     getImageSrc: () => require("../../images/cert_cs50.jpg"),
   },
   {
-    title: "GRPC",
+    title: "gRPC",
     description:
-      "Build modern API and microservices by Clement Jean",
+      "Build modern Application Programming Interface and Microservices by Clement Jean",
     getImageSrc: () => require("../../images/cert_grpc.jpg"),
   },
   {
     title: "GraphQL",
     description:
-      "Build modern API and microservices by Clement Jean",
+      "Learn and master GraphQL by building real web apps with React and Node by Stephen Grider",
     getImageSrc: () => require("../../images/cert_GraphQL.jpg"),
   },
   {
     title: "ASP.Net Core",
     description:
-      "Build modern API and microservices by Clement Jean",
+      "Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity by Bhrugen Patel",
     getImageSrc: () => require("../../images/cert_AspNetCore.jpg"),
   },
 ];
