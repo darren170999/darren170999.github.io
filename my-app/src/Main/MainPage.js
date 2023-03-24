@@ -5,12 +5,14 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import InternshipsSection from "./components/InternshipSection";
 import LandingSection from "./components/LandingSection";
+import StacksSection from "./components/StacksSection";
  
 function MainPage() {
   return (
     <>
     <Header />
     <LandingSection />
+    <StacksSection />
     <InternshipsSection />
     <CertSection/>
     <Footer />
