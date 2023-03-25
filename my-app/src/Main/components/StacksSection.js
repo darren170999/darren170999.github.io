@@ -21,7 +21,7 @@ const StacksSection = () => {
                 <Avatar size='lg' name='MS SQL' src='https://bit.ly/3z5VGGu' />
             </WrapItem>
             <WrapItem>
-                <Avatar size='lg' name='MYSQL' src='https://bit.ly/3LQE3SC' />
+                <Avatar size='lg' name='MYSQL' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAcovj8CFQeraYaoIuH_6baTpZN26K0xTovOQNKqo&s' />
             </WrapItem>
             <WrapItem>
                 <Avatar size='lg' name='NodeJS' src='https://bit.ly/3K5y1MJ' />
