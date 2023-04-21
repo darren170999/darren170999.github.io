@@ -11,7 +11,7 @@ const StacksSection = () => {
       spacing={8}
     >
         <Heading as="h1" id="certs-section">
-        Stacks that I Use
+        Stacks that I use
         </Heading>
         <Wrap>
             <WrapItem>
@@ -21,7 +21,7 @@ const StacksSection = () => {
                 <Avatar size='lg' name='MS SQL' src='https://bit.ly/3z5VGGu' />
             </WrapItem>
             <WrapItem>
-                <Avatar size='lg' name='MYSQL' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAcovj8CFQeraYaoIuH_6baTpZN26K0xTovOQNKqo&s' />
+                <Avatar size='lg' name='MYSQL' src='https://bit.ly/3UTFDpb' />
             </WrapItem>
             <WrapItem>
                 <Avatar size='lg' name='NodeJS' src='https://bit.ly/3K5y1MJ' />
@@ -33,10 +33,19 @@ const StacksSection = () => {
                 <Avatar size='lg' name='.NET Core' src='https://bit.ly/3LPqK4R' />
             </WrapItem>
             <WrapItem>
+                <Avatar size='lg' name='ASP.NET Core' src='https://bit.ly/3N2CZM3' />
+            </WrapItem>
+            <WrapItem>
                 <Avatar size='lg' name='ReactJS' src='https://bit.ly/3z5fpWF' />
             </WrapItem>
             <WrapItem>
-                <Avatar size='lg' name='Redux' src='https://daqxzxzy8xq3u.cloudfront.net/wp-content/uploads/2019/04/21032431/redux-cover-imgage-1024x768.jpg' />
+                <Avatar size='lg' name='Redux' src='https://bit.ly/3oxJjRx' />
+            </WrapItem>
+            <WrapItem>
+                <Avatar size='lg' name='TypeScript' src='https://bit.ly/43Uwykm'/>
+            </WrapItem>
+            <WrapItem>
+                <Avatar size='lg' name='Mongoose' src='https://cms-assets.tutsplus.com/uploads/users/34/posts/29527/preview_image/mongoose.jpg'/>
             </WrapItem>
             {/* Docker Compose, Docker Swarm, Linux, Azure,  */}
         </Wrap>
@@ -45,25 +54,28 @@ const StacksSection = () => {
         </Heading>
         <Wrap>
             <WrapItem>
-                <Avatar size='lg' name='gRPC' src='https://plugins.jetbrains.com/files/16889/307816/icon/pluginIcon.png'/>
+                <Avatar size='lg' name='gRPC' src='https://bit.ly/40sevPr'/>
             </WrapItem>
             <WrapItem>
-                <Avatar size='lg' name='GoLang' src='https://vectorseek.com/wp-content/uploads/2023/03/Golang-Gopher-Logo-Vector-730x730.jpg'/>
+                <Avatar size='lg' name='GoLang' src='https://bit.ly/3N36qh0'/>
             </WrapItem>
             <WrapItem>
-                <Avatar size='lg' name='GraphQL' src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png'/>
+                <Avatar size='lg' name='GraphQL' src='https://bit.ly/3LfHeBB'/>
             </WrapItem>
             <WrapItem>
-                <Avatar size='lg' name='Apache Kafka' src='https://assets.confluent.io/files/6b784911-086f-509b-bcae-7639d6442eab?response_content_disposition=inline&version=a0b1ec4b&account_id=E3DC7592-BA56-4FFC-A81833635367E2D7&signature=U4%2FwHEUkqpeaKl4pdwcJxlS8RHIRNYSoI47xQgEwVempuAepkdue9Bl9KAE1Re1r3gzOS1oXwA43HERNZKeMDg%3D%3D&expiry=1679788800000'/>
+                <Avatar size='lg' name='Apache Kafka' src='https://bit.ly/3AhUErx'/>
             </WrapItem>
             <WrapItem>
-                <Avatar size='lg' name='Django' src='https://studygyaan.com/wp-content/uploads/2021/12/CicamXxN_400x400-1.jpg'/>
+                <Avatar size='lg' name='Django' src='https://bit.ly/3Lg5apy'/>
             </WrapItem>
             <WrapItem>
-                <Avatar size='lg' name='TypeScript' src='https://cdn-icons-png.flaticon.com/512/919/919832.png'/>
+                <Avatar size='lg' name='AngularJS' src='https://bit.ly/3KUM4E2'/>
             </WrapItem>
             <WrapItem>
-                <Avatar size='lg' name='AngularJS' src='https://angular.io/assets/images/logos/angular/angular.svg'/>
+                <Avatar size='lg' name='FireBase' src='https://firebase.google.com/static/images/brand-guidelines/logo-logomark.png'/>
+            </WrapItem>
+            <WrapItem>
+                <Avatar size='lg' name='Elastic Search' src='https://logowik.com/content/uploads/images/elasticsearch6390.jpg'/>
             </WrapItem>
         </Wrap>
     </FullScreenSection>
