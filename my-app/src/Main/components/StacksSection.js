@@ -18,7 +18,7 @@ const StacksSection = () => {
                 <Avatar size='lg' name='MongoDB' src='https://bit.ly/40vDX71' />
             </WrapItem>
             <WrapItem>
-                <Avatar size='lg' name='MS SQL' src='https://bit.ly/3z5VGGu' />
+                <Avatar size='lg' name='MS SQL' src='https://cdn-icons-png.flaticon.com/512/5968/5968409.png' />
             </WrapItem>
             <WrapItem>
                 <Avatar size='lg' name='MYSQL' src='https://bit.ly/3UTFDpb' />
@@ -47,7 +47,12 @@ const StacksSection = () => {
             <WrapItem>
                 <Avatar size='lg' name='Mongoose' src='https://cms-assets.tutsplus.com/uploads/users/34/posts/29527/preview_image/mongoose.jpg'/>
             </WrapItem>
-            {/* Docker Compose, Docker Swarm, Linux, Azure,  */}
+            <WrapItem>
+                <Avatar size='lg' name='Docker' src='https://cdn.iconscout.com/icon/free/png-256/docker-2752207-2285024.png'/>
+            </WrapItem>
+            <WrapItem>
+                <Avatar size='lg' name='Azure Devops' src='https://user-images.githubusercontent.com/1874103/46415699-cfc5cf00-c6f3-11e8-9bcc-2fc2bf1759ec.png'/>
+            </WrapItem>
         </Wrap>
         <Heading as="h1" id="certs-section">
         Stacks that I am currently learning
