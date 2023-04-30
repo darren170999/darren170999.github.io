@@ -20,7 +20,7 @@ const LandingSection = () => (
       <h1 style={{color: "#F7B600"}}>{greeting}</h1>
       <Heading>
         {" "}
-        <h1 style={{textAlign: "Center"}}>{bio1}</h1>
+        <h1 style={{textAlign: "center"}}>{bio1}</h1>
         <h1 style={{color: "#F7B600"}}>{bio2}</h1>
         {" "}
       </Heading>{" "}

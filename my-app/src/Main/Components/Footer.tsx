@@ -1,7 +1,7 @@
-import React from "react";
-import {Box, Flex} from "@chakra-ui/react";
+import React, { FC } from "react";
+import { Box, Flex } from "@chakra-ui/react";
 
-const Footer = () => {
+const Footer: FC = () => {
   return (
     <Box backgroundColor="#18181b">
       <footer>
@@ -20,4 +20,5 @@ const Footer = () => {
     </Box>
   );
 };
+
 export default Footer;

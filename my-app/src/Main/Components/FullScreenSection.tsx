@@ -1,6 +1,13 @@
 import * as React from "react";
 import { VStack } from "@chakra-ui/react";
-const FullScreenSection = ({ children, isDarkBackground, ...boxProps }) => {
+
+type FullScreenSectionProps = {
+  children: React.ReactNode;
+  isDarkBackground: boolean;
+  [key: string] : any;
+}
+
+const FullScreenSection = ({ children, isDarkBackground, ...boxProps }: FullScreenSectionProps) => {
   return (
     <VStack
       backgroundColor={boxProps.backgroundColor}

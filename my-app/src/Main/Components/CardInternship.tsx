@@ -1,9 +1,12 @@
 import { Heading, HStack, Image, Text, VStack } from "@chakra-ui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
 
-const CardInternship = ({ title, description, imageSrc }) => {
+type CardInternshipProps = {
+  title: string;
+  description: string;
+  imageSrc: string;
+}
+
+const CardInternship = ({ title, description, imageSrc }: CardInternshipProps) => {
   return (
     <div>
       <div>
@@ -19,9 +22,7 @@ const CardInternship = ({ title, description, imageSrc }) => {
           <h1>{description}</h1>
         </Text>
         <HStack>
-          {/* <p> See more </p> */}
 
-          {/* <FontAwesomeIcon icon={faArrowRight} size="2x" /> */}
         </HStack>
       </div>{" "}
     </div>

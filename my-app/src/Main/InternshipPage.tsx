@@ -1,7 +1,7 @@
 import {ChakraProvider} from "@chakra-ui/react";
 import './App.css';
-import Footer from "../Main/components/Footer";
-import Header from "../Main/components/Header";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 function InternshipPage() {
   return (
     <>
