@@ -68,7 +68,7 @@ const StacksSection = () => {
                 <Avatar size='lg' name='GraphQL' src='https://bit.ly/3LfHeBB'/>
             </WrapItem>
             <WrapItem>
-                <Avatar size='lg' name='Apache Kafka' src='https://bit.ly/3AhUErx'/>
+                <Avatar size='lg' name='Apache Kafka' src='https://cdn.confluent.io/wp-content/uploads/kafka-icon-blue.jpg'/>
             </WrapItem>
             <WrapItem>
                 <Avatar size='lg' name='Django' src='https://bit.ly/3Lg5apy'/>
