@@ -10,20 +10,24 @@ import {
 } from "firebase/firestore";
 import { db } from "../firebase-config";
 import { useEffect, useState } from "react";
+
+interface DataItem {
+  id: string;
+  // Add other properties here if needed
+}
+
 function MainPage() {
-  const [t, setT] = useState<string[]>([])
+  const [t, setT] = useState<DataItem[]>([])
   const collectionRef = collection(db, "testing");
 
   useEffect(()=> {
     const getTest = async () => {
       const data = await getDocs(collectionRef);
-      console.log(data);
-      setT(data.docs.map((doc)=>doc.id));
+      setT(data.docs.map((doc) => ({ ...doc.data(), id: doc.id } as DataItem)));
     };
 
     getTest();
   }, []);
-  
   return (
     <>
     <Header />
