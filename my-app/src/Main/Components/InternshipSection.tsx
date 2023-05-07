@@ -1,37 +1,28 @@
-import React from "react";
 import FullScreenSection from "./FullScreenSection";
 import { Box, Heading } from "@chakra-ui/react";
 import CardInternship from "./CardInternship";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../firebase-config";
+import { useEffect, useState } from "react";
+interface DataItem{
+  id: string;
+  description: string;
+  title: string;
+  imageSrc: string;
+}
 
-const internships = [
-  {
-    title: "JP Morgan Chase",
-    description:
-      "Incoming Software Engineer Intern",
-    getImageSrc: () => require("../../images/image_jpmorgan.jpg"),
-  },
-  {
-    title: "VISA",
-    description:
-      "Software Engineer Intern (Value Added Services Product Development)",
-    getImageSrc: () => require("../../images/image_visa.jpg"),
-  },
-  {
-    title: "DSTA",
-    description:
-      "Software Engineer Intern (Digital Hub - AI and Autonomy Team)",
-    getImageSrc: () => require("../../images/image_dsta.jpg"),
-  },
-  {
-    title: "Discover Market Asia",
-    description:
-      "Software Engineer Intern (Innovation Team)",
-    getImageSrc: () => require("../../images/image_discovermarket.jpg"),
-  },
-];
-
-const InternshipsSection = () => {
+function InternshipsSection () {
+  const [internships, setInternships] = useState<DataItem[]>([]);
+  const internshipsRef = collection(db, "Internships");
+  useEffect(()=>{
+    const getInternships = async () => {
+      const data = await getDocs(internshipsRef);
+      setInternships(data.docs.map((doc) => ({...doc.data(), id:doc.id} as DataItem)))
+    };
+    getInternships();
+  }, []);
   return (
+    <>
     <FullScreenSection
       backgroundColor="#F7B600"
       isDarkBackground
@@ -53,11 +44,12 @@ const InternshipsSection = () => {
             key={internship.title}
             title={internship.title}
             description={internship.description}
-            imageSrc={internship.getImageSrc()}
+            imageSrc={internship.imageSrc}
           />
         ))}
       </Box>
     </FullScreenSection>
+    </>
   );
 };
 
