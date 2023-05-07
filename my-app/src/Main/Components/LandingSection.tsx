@@ -1,4 +1,3 @@
-import React from "react";
 import { Avatar, Heading, VStack } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 const greeting = "Hi! I am Darren,";
@@ -6,6 +5,7 @@ const bio1 = "An Aspiring";
 const bio2 = "Software Engineer";
 
 const LandingSection = () => (
+
   <FullScreenSection
     justifyContent="center"
     alignItems="center"

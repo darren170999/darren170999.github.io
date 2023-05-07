@@ -5,15 +5,19 @@ import {
 } from "@chakra-ui/react";
 import MainPage from '../src/Main/MainLanding';
 
-export const App = () => (
-  <ChakraProvider theme={theme}>
-    <Router>
-      <Routes>
-        <Route path="/" element={<MainPage/>}/>
-        <Route path="/internships" element={<></>}/>
-        <Route path="/certificates" element={<></>}/>
-      </Routes>
-    </Router>
+export function App() {
 
-  </ChakraProvider>
-)
+  return(
+    <ChakraProvider theme={theme}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainPage/>}/>
+          <Route path="/internships" element={<></>}/>
+          <Route path="/certificates" element={<></>}/>
+        </Routes>
+      </Router>
+
+    </ChakraProvider>
+  )
+
+}
