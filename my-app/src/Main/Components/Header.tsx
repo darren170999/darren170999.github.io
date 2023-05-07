@@ -5,11 +5,7 @@ import {
 import { db } from "../../firebase-config";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import {faGithub, faLinkedin,faMicrosoft} from "@fortawesome/free-brands-svg-icons";
 import { Menu, MenuButton, MenuList, MenuItem, Box, HStack, Button } from "@chakra-ui/react";
 import {ChevronDownIcon} from "@chakra-ui/icons"
 
@@ -47,7 +43,7 @@ function Header() {
               <nav>
               <HStack spacing={18}>
                 <a href={social.email}>
-                  <FontAwesomeIcon icon={faEnvelope} size="2x" />
+                  <FontAwesomeIcon icon={faMicrosoft} size="2x" />
                 </a>
                 <a href={social.github}>
                   <FontAwesomeIcon icon={faGithub} size="2x" />
