@@ -3,7 +3,7 @@ import { Heading, HStack, Image, Text, VStack } from "@chakra-ui/react";
 type CardInternshipProps = {
   title: string;
   description: string;
-  imageSrc?: string;
+  imageSrc: string;
 }
 
 const CardInternship = ({ title, description, imageSrc }: CardInternshipProps) => {
