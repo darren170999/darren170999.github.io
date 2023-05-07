@@ -1,53 +1,39 @@
-import React, { useEffect, useRef } from "react";
+import {
+  collection,
+  getDocs
+} from "firebase/firestore";
+import { db } from "../../firebase-config";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
-  faSquareReddit,
-  faGoogleDrive,
 } from "@fortawesome/free-brands-svg-icons";
-import { Box, HStack, Button } from "@chakra-ui/react";
+import { Menu, MenuButton, MenuList, MenuItem, Box, HStack, Button } from "@chakra-ui/react";
 import {ChevronDownIcon} from "@chakra-ui/icons"
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-} from '@chakra-ui/react'
-const socials = [
-  {
-    icon: faEnvelope,
-    url: "mailto: DSOH010@e.ntu.edu.sg",
-  },
-  {
-    icon: faGithub,
-    url: "https://github.com/darren170999",
-  },
-  {
-    icon: faLinkedin,
-    url: "https://www.linkedin.com/in/dsohjh/",
-  },
-  {
-    icon: faSquareReddit,
-    url: "https://www.reddit.com/user/dsjh99",
-  },
-  {
-    icon: faGoogleDrive,
-    url: "https://drive.google.com/file/d/1TxBu8AN3jee0zah3jjuBtqv0JgBZF7vj/view?usp=sharing",
-  },
-];
 
-const Header = () => {
+interface DataItem {
+  id: string;
+  email: string;
+  github: string;
+  linkedin: string;
+}
+function Header() {
+  const [socials, setSocials] = useState<DataItem[]>([]);
+  const socialsRef = collection(db, "Socials");
+  useEffect(()=>{
+    const getSociety = async () => {
+      const data = await getDocs(socialsRef);
+      setSocials(data.docs.map((doc)=>({...doc.data(), id:doc.id} as DataItem)))
+    };
+    getSociety();
+  },[]);
   return (
+    <>
     <Box
       position="relative"
       backgroundColor="#18181b"
-      
     >
       <Box color="white" maxWidth="1280px" margin="0 auto" >
         <HStack
@@ -56,25 +42,24 @@ const Header = () => {
           justifyContent="space-between"
           alignItems="center"
         >
-          <nav>
-            <HStack spacing={18}>
-              <a href={socials[0].url}>
-                <FontAwesomeIcon icon={socials[0].icon} size="2x" />
-              </a>
-              <a href={socials[1].url}>
-                <FontAwesomeIcon icon={socials[1].icon} size="2x" />
-              </a>
-              <a href={socials[2].url}>
-                <FontAwesomeIcon icon={socials[2].icon} size="2x" />
-              </a>
-              <a href={socials[3].url}>
-                <FontAwesomeIcon icon={socials[3].icon} size="2x" />
-              </a>
-              <a href={socials[4].url}>
-                <FontAwesomeIcon icon={socials[4].icon} size="2x" />
-              </a>
-            </HStack>
-          </nav>
+          {socials.map((social)=>{
+            return(
+              <nav>
+              <HStack spacing={18}>
+                <a href={social.email}>
+                  <FontAwesomeIcon icon={faEnvelope} size="2x" />
+                </a>
+                <a href={social.github}>
+                  <FontAwesomeIcon icon={faGithub} size="2x" />
+                </a>
+                <a href={social.linkedin}>
+                  <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                </a>
+              </HStack>
+            </nav>
+            )}
+          )}
+          
           <Menu >
             {({isOpen}) => (
               <>
@@ -91,6 +76,7 @@ const Header = () => {
         </HStack>
       </Box>
     </Box>
+    </>
   );
 };
 export default Header;
