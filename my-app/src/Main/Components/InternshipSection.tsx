@@ -4,6 +4,7 @@ import CardInternship from "./CardInternship";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase-config";
 import { useEffect, useState } from "react";
+import { css } from "@emotion/react";
 interface DataItem{
   id: string;
   description: string;
@@ -34,19 +35,32 @@ function InternshipsSection () {
         Featured Internships
       </Heading>
       <Box
-        color={"#1a1f71"}
-        display="grid"
-        gridTemplateColumns="repeat(auto-fit,minmax(300px,1fr))"
-        gridGap={8}
+        overflowX="auto" // Enable horizontal scrolling
+        width="100%" // Ensure it doesn't exceed the screen width
+        whiteSpace="nowrap" // Prevents wrapping of child elements
+        css={css`
+            /* Hide scrollbar for all browsers */
+            &::-webkit-scrollbar {
+              display: none;
+            }
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+          `}
       >
-        {internships.map((internship) => (
-          <CardInternship
-            key={internship.title}
-            title={internship.title}
-            description={internship.description}
-            imageSrc={internship.imageSrc}
-          />
-        ))}
+        <Box
+            display="inline-flex" // Use inline-flex to allow horizontal alignment
+            color={"#1a1f71"}
+            gridGap={8}
+          >
+          {internships.map((internship) => (
+            <CardInternship
+              key={internship.title}
+              title={internship.title}
+              description={internship.description}
+              imageSrc={internship.imageSrc}
+            />
+          ))}
+        </Box>
       </Box>
     </FullScreenSection>
     </>

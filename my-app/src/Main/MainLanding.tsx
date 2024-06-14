@@ -11,7 +11,7 @@ function MainPage() {
     <LandingSection />
     <StacksSection />
     <InternshipsSection />
-    <CertSection/>
+    {/* <CertSection/> */}
     <Footer />
     </>
   );
