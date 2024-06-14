@@ -64,7 +64,7 @@ function Header() {
                 {isOpen ? 'Close' : 'Menu'}
               </MenuButton>
               <MenuList>
-                <MenuItem textColor={'#18181b'}>Coming soon</MenuItem>
+                <MenuItem textColor={'#18181b'}>Engineering Blog</MenuItem>
               </MenuList>
               </>
             )}

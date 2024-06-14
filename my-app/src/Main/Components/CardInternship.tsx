@@ -1,4 +1,4 @@
-import { Heading, HStack, Image, Text, VStack } from "@chakra-ui/react";
+import { Button, Card, CardBody, CardHeader, Heading, HStack, Image, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Stack, Text, useDisclosure, VStack } from "@chakra-ui/react";
 
 type CardInternshipProps = {
   title: string;
@@ -7,26 +7,38 @@ type CardInternshipProps = {
 }
 
 const CardInternship = ({ title, description, imageSrc }: CardInternshipProps) => {
+  const { isOpen, onOpen, onClose } = useDisclosure()
   return (
-    <div>
-      <div>
-        <Image src={imageSrc}></Image>
-        <HStack>
-          <Heading>
-            {" "}
-            <h1>{title}</h1>
-          </Heading>{" "}
-        </HStack>
-        <Text>
-          {" "}
-          <h1>{description}</h1>
-        </Text>
-        <HStack>
-
-        </HStack>
-      </div>{" "}
-    </div>
-  );
+    
+    <>
+    <Card>
+        <CardHeader>
+          <Heading color="#1a1f71" size={"md"}> {title} </Heading>
+        </CardHeader>
+        <CardBody>
+          <Image src={imageSrc} borderRadius={"lg"} maxHeight={"sm"} onClick={onOpen}/>
+          <Stack mt='6' spacing='3'>
+            <Heading size='md'>Software Engineer Intern</Heading>
+          </Stack>
+        </CardBody>
+      </Card>
+          <Modal isOpen={isOpen} onClose={onClose}>
+            <ModalOverlay />
+            <ModalContent>
+              <ModalHeader>Experience in project</ModalHeader>
+              <ModalCloseButton />
+              <ModalBody>
+                {description}
+              </ModalBody>
+              <ModalFooter>
+                <Button colorScheme='blue' mr={3} onClick={onClose}>
+                  Close
+                </Button>
+              </ModalFooter>
+            </ModalContent>
+          </Modal>
+    </>
+  )
 };
 
 export default CardInternship;
