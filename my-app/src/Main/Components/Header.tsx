@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedin,faMicrosoft} from "@fortawesome/free-brands-svg-icons";
 import { Menu, MenuButton, MenuList, MenuItem, Box, HStack, Button } from "@chakra-ui/react";
 import {ChevronDownIcon} from "@chakra-ui/icons"
+import { Link } from "react-router-dom";
 
 interface DataItem {
   id: string;
@@ -64,7 +65,12 @@ function Header() {
                 {isOpen ? 'Close' : 'Menu'}
               </MenuButton>
               <MenuList>
-                <MenuItem textColor={'#18181b'}>Engineering Blog</MenuItem>
+                <Link to={"/"}>
+                  <MenuItem textColor={'#18181b'}>Home</MenuItem>
+                </Link>
+                <Link to={"/EngineeringBlog"}>
+                  <MenuItem textColor={'#18181b'}>Engineering Blog</MenuItem>
+                </Link>
               </MenuList>
               </>
             )}

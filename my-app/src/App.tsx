@@ -3,7 +3,8 @@ import {
   ChakraProvider,
   theme,
 } from "@chakra-ui/react";
-import MainPage from '../src/Main/MainLanding';
+import MainPage from './Main/MainPage';
+import BlogPage from "./Main/BlogPage";
 
 export function App() {
 
@@ -12,8 +13,7 @@ export function App() {
       <Router>
         <Routes>
           <Route path="/" element={<MainPage/>}/>
-          <Route path="/internships" element={<></>}/>
-          <Route path="/certificates" element={<></>}/>
+          <Route path="/EngineeringBlog" element={<BlogPage/>}/>
         </Routes>
       </Router>
 

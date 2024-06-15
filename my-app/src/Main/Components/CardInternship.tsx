@@ -10,7 +10,7 @@ const CardInternship = ({ title, description, imageSrc }: CardInternshipProps) =
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <>
-      <Card minWidth={"30%"}>
+      <Card minWidth={{ base: "100%", md: "300px" }}>
           <CardHeader>
             <Heading color="#1a1f71" size={"md"}> {title} </Heading>
           </CardHeader>
