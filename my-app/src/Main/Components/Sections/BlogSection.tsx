@@ -1,57 +1,51 @@
-import { Avatar, Heading, VStack } from "@chakra-ui/react";
+import { Button, ButtonGroup, Divider, Heading, Icon, Stack, Text } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
-import {
-  collection,
-  getDocs
-} from "firebase/firestore";
-import { db } from "../../../firebase-config";
-import { useEffect, useState } from "react";
-interface DataItem {
-  id: string;
-  greeting: string;
-  bio1: string;
-  bio2: string;
-}
-function LandingSection () {
-  const[greetings, setGreetings] = useState<DataItem[]>([]);
-  const greetingsRef = collection(db, "Greetings");
-  useEffect(()=>{
-    const getGreetings = async () => {
-      const data = await getDocs(greetingsRef);
-      setGreetings(data.docs.map((doc) => ({...doc.data(), id:doc.id} as DataItem)))
-    };
-    getGreetings();
-  }, []);
+import { Link } from "react-router-dom";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
+//TODO: Need Fix
+function BlogSection () {
+  let startDate = new Date('2022-01-01');
+  let todaysDate = new Date();
+  let differenceInYears = todaysDate.getFullYear() - startDate.getFullYear();
   return(
     <>
-    <FullScreenSection
-    justifyContent="center"
-    alignItems="center"
-    isDarkBackground
-    backgroundColor="#1a1f71"
-  >
-    {greetings.map((greet)=>{
-      return(
-        <VStack>
-          {" "}
-          <Avatar size='2xl' src='/avatar.png'>
-            {" "}{" "}
-          </Avatar>
-          <h1 style={{color: "#F7B600"}}>{greet.greeting}</h1>
-          <Heading>
-            {" "}
-            <h1 style={{textAlign: "center"}}>{greet.bio1}</h1>
-            <h1 style={{color: "#F7B600"}}>{greet.bio2}</h1>
-            {" "}
-          </Heading>{" "}
-        </VStack>
-      );
-    })};
-    
-  </FullScreenSection>
-  </>
+      <FullScreenSection
+        justifyContent="top"
+        alignItems="left"
+        padding="10"
+        isDarkBackground
+        backgroundColor="#1a1f71">
+          <Stack padding={"8"}>
+            <Heading >
+              Engineering Blog
+            </Heading>
+            <Text noOfLines={[1, 2, 3]}>
+              "My documentation for everything I have learnt over the past {differenceInYears} years".
+            </Text>
+            <Divider orientation='horizontal'/>
+          </Stack>
+          <Stack padding={"8"}>
+            <Heading >
+              Internships
+            </Heading>
+            <Text noOfLines={[1, 2, 3]}>
+              "My personal reflection after having done 6 internships in college".
+            </Text>
+            {/* TODO: Remeber to refactor this ugly implementation */}
+            <ButtonGroup spacing='2'>
+              <Link to={"/EngineeringBlog/Internships"}>
+                <ArrowForwardIcon/> 
+                <Button variant='ghost' colorScheme='blue'>
+                Go To
+                </Button>
+              </Link>
+            </ButtonGroup>
+            <Divider orientation='horizontal'/>
+          </Stack>
+      </FullScreenSection>
+    </>
   )
 
 };
 
-export default LandingSection;
+export default BlogSection;
