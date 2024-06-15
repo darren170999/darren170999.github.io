@@ -1,8 +1,8 @@
 import FullScreenSection from "./FullScreenSection";
 import { Box, Heading, Flex } from "@chakra-ui/react";
-import CardInternship from "./CardInternship";
+import CardInternship from "../Standard/CardInternship";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../../firebase-config";
+import { db } from "../../../firebase-config";
 import { useEffect, useState } from "react";
 import { css } from "@emotion/react";
 

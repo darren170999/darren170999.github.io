@@ -1,9 +1,6 @@
-import CertSection from "./Components/CertSection";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
-import InternshipsSection from "./Components/InternshipSection";
-import LandingSection from "./Components/LandingSection";
-import StacksSection from "./Components/StacksSection";
+import Header from "./Components/Standard/Header";
+import Footer from "./Components/Standard/Footer";
+import LandingSection from "./Components/Sections/LandingSection";
 function BlogPage() {
   return (
     <>
