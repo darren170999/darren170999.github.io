@@ -1,7 +1,5 @@
-import { Button, ButtonGroup, Divider, Heading, Icon, Stack, Tag, TagLabel, Text } from "@chakra-ui/react";
+import { Heading, Stack, Text } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
-import { Link } from "react-router-dom";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "../../../firebase-config";

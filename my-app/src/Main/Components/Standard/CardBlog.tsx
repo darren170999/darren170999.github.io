@@ -7,7 +7,7 @@ const CardBlog = ({ id, heading, tags, text, link, date }: BlogItemType) => {
   const formattedDate = date.toDate().toISOString().split('T')[0];
 
   return (
-    <Stack>
+    <Stack spacing={"4"}>
       <Stack 
         direction={["column", "row"]}
         justify="space-between"
