@@ -22,7 +22,6 @@ function BlogSection() {
     };
     getBlogs();
   }, []);
-  console.log(blogs)
   return(
     <>
       <FullScreenSection
@@ -46,6 +45,7 @@ function BlogSection() {
               text={blog.text}
               tags={blog.tags}
               link={blog.link}
+              date={blog.date}
             />
           ))}
           
