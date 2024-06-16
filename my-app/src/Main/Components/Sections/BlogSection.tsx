@@ -34,7 +34,7 @@ function BlogSection() {
             <Heading size={"2xl"}>
               Engineering Blog
             </Heading>
-            <Text noOfLines={[1, 2, 3]}>
+            <Text noOfLines={[2, 3, 4]}>
               "My documentation for everything I have learnt over the past {differenceInYears} years".
             </Text>
           </Stack>
