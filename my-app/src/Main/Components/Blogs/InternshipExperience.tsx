@@ -30,7 +30,7 @@ function BlogInternshipExperience() {
             <Stack padding={"5"}>
                 {/* <Image></Image> */}
                 <Text noOfLines={[20]} align={"justify"}>
-                My first summer internship was at a startup founded by a Swiss billionaire. Their main line of business involved specialized insurance for niche customers.
+                My first summer internship was at a {<Text as="b">Startup</Text>} founded by a Swiss billionaire. Their main line of business involved specialized insurance for niche customers.
                 We built three Minimum Viable Products (two technical and one non-technical), which served as Proofs of Concept for future features. During this internship,
                 I gained exposure to agile team workflows and interesting interactive web technologies.
                 </Text>
@@ -44,7 +44,7 @@ function BlogInternshipExperience() {
             </Stack>
             <Stack padding={"5"}>
                 <Text noOfLines={[20]} align={"justify"}>
-                Following this, I completed my college's mandatory internship at a Statutory Board that focuses on Defence Tech. Here, I encountered a completely different 
+                Following this, I completed my college's mandatory internship at a {<Text as="b">Statutory Board</Text>} that focuses on Defence Tech. Here, I encountered a completely different 
                 working culture. The team I was assigned to felt familiar and welcoming, and I thoroughly enjoyed my time there. Collaborating with professors from overseas 
                 universities was a rare and enriching experience. However, I regret not fully appreciating the technical work assigned to me at the time. By my own standards, 
                 I felt I didn't contribute enough to be considered useful and wished I had been brave enough to ask more questions. Despite this, I was exposed to many fascinating 
@@ -58,7 +58,7 @@ function BlogInternshipExperience() {
             </Stack>
             <Stack padding={"5"}>
                 <Text noOfLines={[20]} align={"justify"}>
-                I was fortunate enough to intern at a bank after winning their hackathon, a tech competition. As the largest financial institution in the world, they operate in 
+                I was fortunate enough to intern at a {<Text as="b">Bank</Text>} after winning their hackathon, a tech competition. As the largest financial institution in the world, they operate in 
                 hundreds of countries, making it the largest organization I have ever been a part of. The firm-wide orientation placed a heavy emphasis on business acumen. 
                 To broaden our exposure, side projects were also assigned to give us a well-rounded understanding of the various lines of business. The work I did there involved 
                 maintaining systems and finding new ways to automate old processes.
@@ -70,7 +70,7 @@ function BlogInternshipExperience() {
             </Stack>
             <Stack padding={"5"}>
                 <Text noOfLines={[25]} align={"justify"}>
-                Perhaps the most notable internships for software engineers are those at tech companies. Interning at a large cryptocurrency exchange and the largest payments 
+                Perhaps the most notable internships for software engineers are those at {<Text as="b">Tech</Text>} companies. Interning at a large cryptocurrency exchange and the largest payments 
                 provider gave me valuable insights into the fintech industry. Tech companies are where engineering truly comes alive; their codebases and practices are just marvelous. 
                 Even more impressive are the people who were hired before you, possessing a vast treasure trove of knowledge that is accessible if they are not gatekeepers.
                 One time, I brought a custom keyboard to work, which I had soldered and assembled with a friend. I was proud of it. A senior engineering manager, who previously worked 
