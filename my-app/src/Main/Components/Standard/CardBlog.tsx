@@ -17,7 +17,7 @@ const CardBlog = ({ id, heading, tags, text, link, date }: BlogItemType) => {
         <Badge>{formattedDate}</Badge>
       </Stack>
       
-      <Text noOfLines={[2, 3, 4]}>{text}</Text>
+      <Text noOfLines={[3]}>{text}</Text>
       
       <ButtonGroup spacing={2}>
         <Link to={link}>
