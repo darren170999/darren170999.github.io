@@ -52,20 +52,20 @@ function BlogInternshipExperience() {
                 </Text>
                 <Text noOfLines={[20]} align={"justify"}>
                 Lesson: Be bold and ask senior engineers many questions—there are no bad questions. Complete demo projects diligently, as they simulate future complex problems. 
-                Some people in such environments may prefer a laid-back career, which is perfectly fine as long as you are clear about your own priorities. 
-                The term "comfortably numb" aptly describes the situation.
+                Some may prefer a more laid-back career, which is perfectly fine as long as you are clear about your their own priorities. Be careful not to be "comfortably numb".
                 </Text>
             </Stack>
             <Stack padding={"5"}>
                 <Text noOfLines={[20]} align={"justify"}>
-                I was fortunate enough to intern at a {<Text as="b">Bank</Text>} after winning their hackathon, a tech competition. As the largest financial institution in the world, they operate in 
-                hundreds of countries, making it the largest organization I have ever been a part of. The firm-wide orientation placed a heavy emphasis on business acumen. 
-                To broaden our exposure, side projects were also assigned to give us a well-rounded understanding of the various lines of business. The work I did there involved 
+                I was fortunate enough to intern at a {<Text as="b">Bank</Text>} after winning their hackathon, a tech competition. As the largest financial institution in the world, 
+                they operate in hundreds of countries, making it the largest organization I have ever been a part of. The firm-wide orientation placed a heavy emphasis on business acumen. 
+                To broaden our exposure, side projects were also assigned to give us a well-rounded understanding of the other lines of business. The work I did there involved 
                 maintaining systems and finding new ways to automate old processes.
                 </Text>
                 <Text noOfLines={[20]} align={"justify"}>
                 Lesson: Always be nice and work on your communication skills. Often, it is more important to be personable than to be highly technical in a bank. Many tips focused on 
-                networking and holding conversations well. 
+                networking and holding conversations well. There might not be enough time to do anything meaningful as the time here is short(6 weeks at the floor), so we should the 
+                learn to make the best of our situation.
                 </Text>
             </Stack>
             <Stack padding={"5"}>
