@@ -21,7 +21,7 @@ function BlogInternshipExperience() {
             </Stack>
             <Stack padding={"5"} as="i">
                 <Text noOfLines={[20]} align={"justify"}>
-                Disclaimer: This is an opinionated reflection on the Software Engineering(SWE) Internships that I have done over 
+                Disclaimer: Not advice. This is an opinionated reflection on the Software Engineering(SWE) Internships that I have done over 
                 the past 2 years. At the time of writing this, I am a graduating college senior and I just wanted to jot
                 some of the most memorable learnings I've taken away from each of them. Hopefully, these insights will add value 
                 to those who read this and help guide them a bit better in navigating the SWE space.
