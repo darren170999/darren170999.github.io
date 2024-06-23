@@ -4,7 +4,7 @@ import Footer from "../Standard/Footer";
 import Header from "../Standard/Header";
 import { useEffect, useState } from "react";
 import { ViewIcon } from "@chakra-ui/icons";
-import { auth, db } from "../../../firebase-config";
+import { db } from "../../../firebase-config";
 import { signInAnonymously } from "firebase/auth";
 import { doc, getDoc, setDoc, updateDoc, increment } from "firebase/firestore";
 
@@ -12,33 +12,6 @@ import { doc, getDoc, setDoc, updateDoc, increment } from "firebase/firestore";
 function BlogInternshipExperience() {
     //Add images 
     const [uniqueViews, setUniqueViews] = useState(0);
-
-    useEffect(() => {
-      const trackUniquePageView = async () => {
-        const userCredentials = await signInAnonymously(auth);
-        const userId = userCredentials.user.uid;
-        const pageRef = doc(db, 'pages', 'internshipExp');
-        const uniqueViewsRef = doc(pageRef, 'uniqueViews', userId);
-  
-        const uniqueViewDoc = await getDoc(uniqueViewsRef);
-        if (!uniqueViewDoc.exists) {
-          await setDoc(uniqueViewsRef, { timestamp: new Date() });
-          await updateDoc(pageRef, { uniqueViews: increment(1) });
-  
-          const pageDoc = await getDoc(pageRef);
-          if (pageDoc.exists()) {
-            setUniqueViews(pageDoc.data().uniqueViews);
-          }
-        } else {
-          const pageDoc = await getDoc(pageRef);
-          if (pageDoc.exists()) {
-            setUniqueViews(pageDoc.data().uniqueViews);
-          }
-        }
-      };
-  
-      trackUniquePageView();
-    }, []);
     
     return (
         <>
