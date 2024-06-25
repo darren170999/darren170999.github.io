@@ -91,7 +91,7 @@ function BlogSourcegraphCody() {
                     </Text>
                     <Text noOfLines={[20]} align="justify">
                         {<Text as="b">Eg: </Text>}
-                        Perhaps we want to learn how a React Hook like {<Code background={"#fff2cf"}>useMemo</Code>}, is used across different subteams or learn how another our 
+                        Perhaps we want to learn how a React Hook like {<Code background={"#fff2cf"}>useMemo</Code>}, is used across different subteams or learn how our 
                         data engineers are publishing an event of interest, sg makes it much easier to do that.
                     </Text>
                 </Stack>
