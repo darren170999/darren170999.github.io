@@ -5,7 +5,7 @@ import {
 } from "@chakra-ui/react";
 import MainPage from './Main/MainPage';
 import BlogPage from "./Main/BlogPage";
-import BlogInternshipExperience from "./Main/Components/Blogs/InternshipExperience";
+import BlogInternshipExperience from "./Main/Components/Blogs/InternshipExperienceBlog";
 const EngineeringBlogRoutes = () => (
   <Routes>
     <Route path="/" element={<BlogPage />} />
