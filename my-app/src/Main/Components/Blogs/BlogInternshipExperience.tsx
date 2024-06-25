@@ -14,26 +14,20 @@ function BlogInternshipExperience() {
 
     useEffect(() => {
         async function updateAndFetchViews() {
-            // Reference to the document
-            const docRef = doc(db, "Views", "CodySourceGraphExperienceViews");
+            const docRef = doc(db, "Views", "InternshipExpViews");
 
             try {
-                // Check if the view has already been incremented in this session
                 if (!sessionStorage.getItem("viewIncremented")) {
-                    // Increment the view count
                     await updateDoc(docRef, {
                         count: increment(1)
                     });
-                    // Set the session storage flag to indicate that the view has been incremented
                     sessionStorage.setItem("viewIncremented", "true");
                 }
 
-                // Fetch the updated document
                 const docSnap = await getDoc(docRef);
                 if (docSnap.exists()) {
                     setUniqueViews(docSnap.data().count);
                 } else {
-                    // If the document doesn't exist, create it with a count of 1
                     await setDoc(docRef, { count: 1 });
                     setUniqueViews(1);
                 }
@@ -44,7 +38,7 @@ function BlogInternshipExperience() {
             }
         }
 
-        // updateAndFetchViews();
+        updateAndFetchViews();
     }, []);
 
     return (
@@ -99,7 +93,7 @@ function BlogInternshipExperience() {
                         working culture. The team I was assigned to felt familiar and welcoming, and I thoroughly enjoyed my time there. Collaborating with professors from overseas 
                         universities was a rare and enriching experience. However, I regret not fully appreciating the technical work assigned to me at the time. By my own standards, 
                         I felt I didn't contribute enough to be considered useful and wished I had been brave enough to ask more questions. Despite this, I was exposed to many fascinating 
-                        and confidential projects and made many friends in the process. Being able to work on confidential projects made it more patriotic.
+                        and confidential projects and made many friends in the process. Being able to work on confidential projects made the experience a more patriotic one.
                     </Text>
                     <Text noOfLines={[20]} align="justify">
                         Lesson: Be bold and ask senior engineers many questions—there are no bad questions. Complete demo projects diligently, as they simulate future complex problems. 

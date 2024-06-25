@@ -28,7 +28,7 @@ function BlogSection() {
         padding="10"
         isDarkBackground
         backgroundColor="#1a1f71">
-          <Stack padding={"8"}>
+          <Stack>
             <Heading size={"2xl"}>
               Engineering Blog
             </Heading>

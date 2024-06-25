@@ -5,12 +5,14 @@ import {
 } from "@chakra-ui/react";
 import MainPage from './Main/MainPage';
 import BlogPage from "./Main/BlogPage";
-import BlogInternshipExperience from "./Main/Components/Blogs/InternshipExperienceBlog";
+import BlogInternshipExperience from "./Main/Components/Blogs/BlogInternshipExperience";
+import BlogSourcegraphCody from "./Main/Components/Blogs/BlogSourcegraphCody";
 const EngineeringBlogRoutes = () => (
   <Routes>
     <Route path="/" element={<BlogPage />} />
     <Route path="Internships" element={<BlogInternshipExperience/>} />
-    <Route path="Interviews" element={<></>} />
+    <Route path="Sourcegraph" element={<BlogSourcegraphCody/>} />
+    <Route path="Databricks" element={<></>}/>
     {/* Add more sub-routes here as needed */}
   </Routes>
 );
