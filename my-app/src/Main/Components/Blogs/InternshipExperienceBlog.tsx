@@ -14,26 +14,20 @@ function BlogInternshipExperience() {
 
     useEffect(() => {
         async function updateAndFetchViews() {
-            // Reference to the document
             const docRef = doc(db, "Views", "InternshipExpViews");
 
             try {
-                // Check if the view has already been incremented in this session
                 if (!sessionStorage.getItem("viewIncremented")) {
-                    // Increment the view count
                     await updateDoc(docRef, {
                         count: increment(1)
                     });
-                    // Set the session storage flag to indicate that the view has been incremented
                     sessionStorage.setItem("viewIncremented", "true");
                 }
 
-                // Fetch the updated document
                 const docSnap = await getDoc(docRef);
                 if (docSnap.exists()) {
                     setUniqueViews(docSnap.data().count);
                 } else {
-                    // If the document doesn't exist, create it with a count of 1
                     await setDoc(docRef, { count: 1 });
                     setUniqueViews(1);
                 }
