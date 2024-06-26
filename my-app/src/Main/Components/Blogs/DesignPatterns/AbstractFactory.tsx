@@ -106,8 +106,8 @@ function AbstractFactory() {
               </TabList>
               <TabPanels>
                 <TabPanel>
-                  <Box p={4} bg="gray.100" borderRadius="md">
-                    <Code p={4} display="block" whiteSpace="pre">
+                <Box p={2} bg="gray.100" borderRadius="md" overflowX="auto">
+                    <Code p={2} display="block" whiteSpace="pre">
                       {`public interface IUIFactory
 {
     IButton CreateButton();
@@ -117,8 +117,8 @@ function AbstractFactory() {
                   </Box>
                 </TabPanel>
                 <TabPanel>
-                  <Box p={4} bg="gray.100" borderRadius="md">
-                    <Code p={4} display="block" whiteSpace="pre">
+                <Box p={2} bg="gray.100" borderRadius="md" overflowX="auto">
+                    <Code p={2} display="block" whiteSpace="pre">
                       {`public class WindowsFactory : IUIFactory
 {
     public IButton CreateButton()
@@ -148,8 +148,8 @@ public class MacFactory : IUIFactory
                   </Box>
                 </TabPanel>
                 <TabPanel>
-                  <Box p={4} bg="gray.100" borderRadius="md">
-                    <Code p={4} display="block" whiteSpace="pre">
+                <Box p={2} bg="gray.100" borderRadius="md" overflowX="auto">
+                    <Code p={2} display="block" whiteSpace="pre">
                       {`public interface IButton
 {
     void Paint();
@@ -163,8 +163,8 @@ public interface ITextBox
                   </Box>
                 </TabPanel>
                 <TabPanel>
-                  <Box p={4} bg="gray.100" borderRadius="md">
-                    <Code p={4} display="block" whiteSpace="pre">
+                <Box p={2} bg="gray.100" borderRadius="md" overflowX="auto">
+                    <Code p={2} display="block" whiteSpace="pre">
                       {`public class WindowsButton : IButton
 {
     public void Paint()
@@ -200,8 +200,8 @@ public class MacTextBox : ITextBox
                   </Box>
                 </TabPanel>
                 <TabPanel>
-                  <Box p={4} bg="gray.100" borderRadius="md">
-                    <Code p={4} display="block" whiteSpace="pre">
+                <Box p={2} bg="gray.100" borderRadius="md" overflowX="auto">
+                    <Code p={2} display="block" whiteSpace="pre">
                       {`public class Application
 {
     private readonly IButton _button;

@@ -57,76 +57,84 @@ function Singleton() {
               </TabList>
               <TabPanels>
                 <TabPanel>
-                  <Box p={4} bg="gray.100" borderRadius="md">
-                    <Code p={4} display="block" whiteSpace="pre">
-                      {`public sealed class Singleton
+                  <Box p={2} bg="gray.100" borderRadius="md" overflowX="auto">
+                    <Code p={2} display="block" whiteSpace="pre">
+{`public sealed class Singleton
 {
-    private static Singleton _instance = null;
-    private static readonly object _lock = new object();
+  private static Singleton _instance 
+    = null;
+  private static readonly object _lock 
+    = new object();
 
-    // Private constructor to prevent instantiation
-    private Singleton() { }
+  // Private constructor to prevent 
+  // instantiation
+  private Singleton() { }
 
-    public static Singleton Instance
+  public static Singleton Instance
+  {
+    get
     {
-        get
+      lock (_lock)
+      {
+        if (_instance == null)
         {
-            lock (_lock)
-            {
-                if (_instance == null)
-                {
-                    _instance = new Singleton();
-                }
-                return _instance;
-            }
+          _instance = new Singleton();
         }
+        return _instance;
+      }
     }
+  }
 }`}
                     </Code>
                   </Box>
                 </TabPanel>
                 <TabPanel>
-                  <Box p={4} bg="gray.100" borderRadius="md">
-                    <Code p={4} display="block" whiteSpace="pre">
-                      {`public sealed class ConfigurationManager
+                <Box p={2} bg="gray.100" borderRadius="md" overflowX="auto">
+                    <Code p={2} display="block" whiteSpace="pre">
+{`public sealed class ConfigurationManager
 {
-    private static ConfigurationManager _instance = null;
-    private static readonly object _lock = new object();
+  private static ConfigurationManager _instance 
+    = null;
+  private static readonly object _lock 
+    = new object();
 
-    public string Configuration { get; private set; }
+  public string Configuration { 
+    get; 
+    private set; 
+  }
 
-    private ConfigurationManager()
-    {
-        // Load configuration settings
-        Configuration = "Default Configuration";
-    }
+  private ConfigurationManager()
+  {
+      // Load configuration settings
+      Configuration = "Default Configuration";
+  }
 
-    public static ConfigurationManager Instance
-    {
-        get
-        {
-            lock (_lock)
-            {
-                if (_instance == null)
-                {
-                    _instance = new ConfigurationManager();
-                }
-                return _instance;
-            }
-        }
-    }
+  public static ConfigurationManager Instance
+  {
+      get
+      {
+          lock (_lock)
+          {
+              if (_instance == null)
+              {
+                  _instance = new ConfigurationManager();
+              }
+              return _instance;
+          }
+      }
+  }
 
-    public void UpdateConfiguration(string newConfig)
-    {
-        Configuration = newConfig;
-    }
+  public void UpdateConfiguration(string newConfig)
+  {
+      Configuration = newConfig;
+  }
 }`}
                     </Code>
                   </Box>
                 </TabPanel>
                 <TabPanel>
-                  <Box p={4} bg="gray.100" borderRadius="md">
-                    <Code p={4} display="block" whiteSpace="pre">
+                <Box p={2} bg="gray.100" borderRadius="md" overflowX="auto">
+                    <Code p={2} display="block" whiteSpace="pre">
                       {`class Program
 {
     static void Main(string[] args)
@@ -145,8 +153,8 @@ function Singleton() {
                   </Box>
                 </TabPanel>
                 <TabPanel>
-                  <Box p={4} bg="gray.100" borderRadius="md">
-                    <Code p={4} display="block" whiteSpace="pre">
+                <Box p={2} bg="gray.100" borderRadius="md" overflowX="auto">
+                    <Code p={2} display="block" whiteSpace="pre">
                       {`Default Configuration
 New Configuration
 New Configuration
