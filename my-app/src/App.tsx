@@ -8,12 +8,14 @@ import BlogPage from "./Main/BlogPage";
 import BlogInternshipExperience from "./Main/Components/Blogs/BlogInternshipExperience";
 import BlogSourcegraphCody from "./Main/Components/Blogs/BlogSourcegraphCody";
 import BlogDesignPatternsCSharp from "./Main/Components/Blogs/BlogDesignPatternsCSharp";
+import BlogDatabricks from "./Main/Components/Blogs/BlogDatabricks";
 const EngineeringBlogRoutes = () => (
   <Routes>
     <Route path="/" element={<BlogPage />} />
     <Route path="Internships" element={<BlogInternshipExperience/>} />
     <Route path="Sourcegraph" element={<BlogSourcegraphCody/>} />
     <Route path="DesignPatterns" element={<BlogDesignPatternsCSharp/>}/>
+    <Route path="Databricks" element={<BlogDatabricks/>}/>
     {/* Add more sub-routes here as needed */}
   </Routes>
 );
