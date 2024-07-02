@@ -41,7 +41,7 @@ function LandingSection () {
           <Heading>
             {" "}
             <h1 style={{textAlign: "center"}}>{greet.bio1}</h1>
-            <h1 style={{color: "#F7B600"}}>{greet.bio2}</h1>
+            <h1 style={{color: "#F7B600", textAlign: "center"}}>{greet.bio2}</h1>
             {" "}
           </Heading>{" "}
         </VStack>
