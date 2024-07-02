@@ -4,9 +4,10 @@ type CardInternshipProps = {
   title: string;
   description: string;
   imageSrc: string;
+  date: number;
 }
 
-const CardInternship = ({ title, description, imageSrc }: CardInternshipProps) => {
+const CardInternship = ({ title, description, imageSrc, date }: CardInternshipProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <>

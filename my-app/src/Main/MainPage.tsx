@@ -1,4 +1,3 @@
-import CertSection from "./Components/Sections/CertSection";
 import Footer from "./Components/Standard/Footer";
 import Header from "./Components/Standard/Header";
 import InternshipsSection from "./Components/Sections/InternshipSection";
@@ -11,7 +10,6 @@ function MainPage() {
     <LandingSection />
     <StacksSection />
     <InternshipsSection />
-    {/* <CertSection/> */}
     <Footer />
     </>
   );

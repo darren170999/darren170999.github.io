@@ -11,6 +11,7 @@ interface DataItem {
   description: string;
   title: string;
   imageSrc: string;
+  date: number;
 }
 
 function InternshipsSection() {
@@ -26,7 +27,7 @@ function InternshipsSection() {
     };
     getInternships();
   }, []);
-
+  const sortedInternships = internships.sort((a, b) => a.date - b.date);
   return (
     <FullScreenSection
       backgroundColor="#F7B600"
@@ -57,12 +58,13 @@ function InternshipsSection() {
           gridGap={8}
           flexDirection={["column", "row"]} // Responsive array syntax for direction
         >
-          {internships.map((internship) => (
+          {sortedInternships.map((internship) => (
             <CardInternship
               key={internship.id}
               title={internship.title}
               description={internship.description}
               imageSrc={internship.imageSrc}
+              date={internship.date}
             />
           ))}
         </Flex>
