@@ -9,6 +9,7 @@ import BlogInternshipExperience from "./Main/Components/Blogs/BlogInternshipExpe
 import BlogSourcegraphCody from "./Main/Components/Blogs/BlogSourcegraphCody";
 import BlogDesignPatternsCSharp from "./Main/Components/Blogs/BlogDesignPatternsCSharp";
 import BlogDatabricks from "./Main/Components/Blogs/BlogDatabricks";
+import BlogTemporal from "./Main/Components/Blogs/BlogTemporal";
 const EngineeringBlogRoutes = () => (
   <Routes>
     <Route path="/" element={<BlogPage />} />
@@ -16,6 +17,7 @@ const EngineeringBlogRoutes = () => (
     <Route path="Sourcegraph" element={<BlogSourcegraphCody/>} />
     <Route path="DesignPatterns" element={<BlogDesignPatternsCSharp/>}/>
     <Route path="Databricks" element={<BlogDatabricks/>}/>
+    <Route path="Temporal" element={<BlogTemporal/>}/>
     {/* Add more sub-routes here as needed */}
   </Routes>
 );
