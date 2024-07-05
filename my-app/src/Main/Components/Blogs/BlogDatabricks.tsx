@@ -99,8 +99,7 @@ function BlogDatabricks() {
                 </Stack>
                 <Stack padding="5">
                     <Text noOfLines={[20]} align="justify">
-                        {<Text as="b">Overview: </Text>}
-                        Overview: Databrick's main competive advantage lies in its ability to provide a new architecture known as the Data lakehouse, which is essentially a 
+                        {<Text as="b">Overview: </Text>}Databrick's main competive advantage lies in its ability to provide a new architecture known as the Data lakehouse, which is essentially a 
                         Data lake built on top of a Data warehouse. From the developers of Delta Lake, Apache Spark and MlFlow, Lakehouse was made to overcome a few engineering
                         gaps, like giving structure to Data lake and having better runtime. Lakehouse also uses delta lake and photon giving ACID support to database operations.
                         In addition, Delta Live Tables will also value add to data engineering teams as they managed to streamline traditional data pipeline processes, making it 
