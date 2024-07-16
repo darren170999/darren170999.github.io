@@ -53,7 +53,7 @@ function BlogTemporal() {
                 <Stack padding="5" alignContent="baseline">
                     <HStack>
                         <Heading size="xl">
-                            Why {<Text as="b" color={"#FF3621"}>Databricks</Text>}?
+                           {<Text as="b" color={"#FF3621"}>Temporal</Text>} Takeaways
                         </Heading>
                         <Spacer />
                         <ViewIcon />
