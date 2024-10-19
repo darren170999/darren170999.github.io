@@ -1,7 +1,7 @@
 import { Timestamp } from "firebase/firestore";
 
 export type BlogItemType = {
-  date: Timestamp;
+  date: Date;
   id: string;
   heading: string;
   link: string;

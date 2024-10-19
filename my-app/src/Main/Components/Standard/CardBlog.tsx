@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { BlogItemType } from "../../Types/BlogItemType";
 
 const CardBlog = ({ id, heading, tags, text, link, date }: BlogItemType) => {
-  const formattedDate = date.toDate().toISOString().split('T')[0];
+  const formattedDate = date.toISOString().split('T')[0];
 
   return (
     <Stack spacing={"4"}>

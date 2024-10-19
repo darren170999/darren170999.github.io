@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { db } from "../../../firebase-config";
 import { BlogItemType } from "../../Types/BlogItemType";
 import CardBlog from "../Standard/CardBlog";
+import { Timestamp } from 'firebase/firestore';
 //TODO: Need Fix
 
 function BlogSection() {
@@ -13,13 +14,27 @@ function BlogSection() {
   let differenceInYears = todaysDate.getFullYear() - startDate.getFullYear();
   const [blogs, setBlogs] = useState<BlogItemType[]>([]);
   const blogsRef = collection(db, "Blogs");
-  useEffect(()=>{
+  useEffect(() => {
     const getBlogs = async () => {
       const data = await getDocs(blogsRef);
-      setBlogs(data.docs.map((doc) => ({...doc.data(), id:doc.id} as BlogItemType)))
+      
+      // Map data and sort by date, most recent first
+      const sortedBlogs = data.docs
+        .map((doc) => ({
+          ...doc.data(),
+          id: doc.id,
+          date: (doc.data().date as Timestamp).toDate(), // Convert Timestamp to Date
+        } as BlogItemType))
+        .sort((a, b) => {
+          return b.date.getTime() - a.date.getTime(); // Compare dates
+        });
+
+      console.log(sortedBlogs); // Log the sorted blogs
+      setBlogs(sortedBlogs);
     };
+
     getBlogs();
-  }, []);
+  }, [blogsRef]);
   return(
     <>
       <FullScreenSection
