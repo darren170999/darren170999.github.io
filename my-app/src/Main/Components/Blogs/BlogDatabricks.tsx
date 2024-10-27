@@ -1,4 +1,4 @@
-import { Stack, Heading, Text, Spacer, HStack, Spinner, Alert, AlertIcon, Link, AspectRatio, Code } from "@chakra-ui/react";
+import { Stack, Heading, Text, Spacer, HStack, Spinner, Alert, AlertIcon, Link, AspectRatio } from "@chakra-ui/react";
 import FullScreenSection from "../Sections/FullScreenSection";
 import Footer from "../Standard/Footer";
 import Header from "../Standard/Header";
