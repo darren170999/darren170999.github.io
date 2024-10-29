@@ -8,7 +8,7 @@ import BlogDesignPatternsCSharp from "./Main/Components/Blogs/BlogDesignPatterns
 import BlogDatabricks from "./Main/Components/Blogs/BlogDatabricks";
 import BlogTemporal from "./Main/Components/Blogs/BlogTemporal";
 import BlogGarbageCollection from "./Main/Components/Blogs/BlogGarbageCollection";
-import { Profiler } from "react";
+// import { Profiler } from "react";
 
 // Define the blog routes
 const EngineeringBlogRoutes = () => (
@@ -25,46 +25,47 @@ const EngineeringBlogRoutes = () => (
 );
 
 // Type definition for the onRender callback
-type ProfilerOnRenderCallback = (
-  id: string,
-  phase: 'mount' | 'update' | "nested-update",
-  actualDuration: number,
-  baseDuration: number,
-  startTime: number,
-  commitTime: number
-) => void;
+// type ProfilerOnRenderCallback = (
+//   id: string,
+//   phase: 'mount' | 'update' | "nested-update",
+//   actualDuration: number,
+//   baseDuration: number,
+//   startTime: number,
+//   commitTime: number
+// ) => void;
 
 // Define the onRender callback function
-const onRenderCallback: ProfilerOnRenderCallback = (
-  id,
-  phase,
-  actualDuration,
-  baseDuration,
-  startTime,
-  commitTime
-) => {
-  console.log({
-    id,
-    phase,
-    actualDuration,
-    baseDuration,
-    startTime,
-    commitTime
-  });
-};
+// const onRenderCallback: ProfilerOnRenderCallback = (
+//   id,
+//   phase,
+//   actualDuration,
+//   baseDuration,
+//   startTime,
+//   commitTime
+// ) => {
+//   console.log({
+//     id,
+//     phase,
+//     actualDuration,
+//     baseDuration,
+//     startTime,
+//     commitTime
+//   });
+// };
 
 // Define the main App component
 export function App() {
   return (
-    <Profiler id="App" onRender={onRenderCallback}>
+    // <Profiler id="App" onRender={onRenderCallback}>
       <ChakraProvider theme={theme}>
         <Router>
           <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="/EngineeringBlog/*" element={<EngineeringBlogRoutes />} />
+            {/* <Route path="/EngineeringBlog/Databricks" element={<BlogDatabricks />} /> */}
           </Routes>
         </Router>
       </ChakraProvider>
-    </Profiler>
+    // {/* </Profiler> */}
   );
 }

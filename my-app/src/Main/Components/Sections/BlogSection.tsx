@@ -6,7 +6,6 @@ import { db } from "../../../firebase-config";
 import { BlogItemType } from "../../Types/BlogItemType";
 import CardBlog from "../Standard/CardBlog";
 import { Timestamp } from 'firebase/firestore';
-//TODO: Need Fix
 
 function BlogSection() {
   let startDate = new Date('2022-01-01');
