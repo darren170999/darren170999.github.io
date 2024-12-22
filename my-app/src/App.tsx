@@ -6,8 +6,9 @@ import BlogInternshipExperience from "./Main/Components/Blogs/BlogInternshipExpe
 import BlogSourcegraphCody from "./Main/Components/Blogs/BlogSourcegraphCody";
 import BlogDesignPatternsCSharp from "./Main/Components/Blogs/BlogDesignPatternsCSharp";
 import BlogDatabricks from "./Main/Components/Blogs/BlogDatabricks";
-import BlogTemporal from "./Main/Components/Blogs/BlogTemporal";
-import BlogGarbageCollection from "./Main/Components/Blogs/BlogGarbageCollection";
+// import BlogTemporal from "./Main/Components/Blogs/BlogTemporal";
+// import BlogGarbageCollection from "./Main/Components/Blogs/BlogGarbageCollection";
+import BlogOuttakes2024 from "./Main/Components/Blogs/BlogOutakes2024";
 // import { Profiler } from "react";
 
 // Define the blog routes
@@ -18,8 +19,9 @@ const EngineeringBlogRoutes = () => (
     <Route path="Sourcegraph" element={<BlogSourcegraphCody />} />
     <Route path="DesignPatterns" element={<BlogDesignPatternsCSharp />} />
     <Route path="Databricks" element={<BlogDatabricks />} />
-    <Route path="Temporal" element={<BlogTemporal />} />
-    <Route path="GarbageCollection" element={<BlogGarbageCollection />} />
+    {/* <Route path="Temporal" element={<BlogTemporal />} /> */}
+    {/* <Route path="GarbageCollection" element={<BlogGarbageCollection />} /> */}
+    <Route path="Outtakes2024" element={<BlogOuttakes2024/>}/>
     {/* Add more sub-routes here as needed */}
   </Routes>
 );
@@ -62,7 +64,6 @@ export function App() {
           <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="/EngineeringBlog/*" element={<EngineeringBlogRoutes />} />
-            {/* <Route path="/EngineeringBlog/Databricks" element={<BlogDatabricks />} /> */}
           </Routes>
         </Router>
       </ChakraProvider>

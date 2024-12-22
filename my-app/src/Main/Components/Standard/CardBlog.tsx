@@ -21,7 +21,7 @@ const CardBlog = ({ id, heading, tags, text, link, date }: BlogItemType) => {
       
       <ButtonGroup spacing={2}>
         <Link to={link}>
-          <Button variant="ghost" colorScheme="blue" rightIcon={<ArrowForwardIcon />}>
+          <Button variant="ghost" colorScheme="yellow" rightIcon={<ArrowForwardIcon />}>
             Read more
           </Button>
         </Link>
