@@ -14,7 +14,7 @@ function BlogOuttakes2024() {
 
     useEffect(() => {
         async function updateAndFetchViews() {
-            const docRef = doc(db, "Views", "TemporalExperienceViews");
+            const docRef = doc(db, "Views", "OuttakesExperienceViews");
 
             try {
                 if (!sessionStorage.getItem("viewIncremented")) {
@@ -125,7 +125,7 @@ function BlogOuttakes2024() {
                         {<Text as="b">Lesson 3: Dealing with redtapes in your organisation</Text>}
                     </Heading>
                     <Text noOfLines={[20]} align="justify">
-                        Life is a multi threadded system, and concurrency is king.
+                        Life is a multithreaded system, and concurrency is king.
                     </Text>
                     <Text noOfLines={[25]} align="justify">
                         I have come to see life—and work—as a multithreaded system, where concurrency reigns supreme. Along the way, I have realized that red tape isn’t entirely bad. It often 
@@ -138,7 +138,7 @@ function BlogOuttakes2024() {
                         the ability to execute tasks concurrently is how we can move past bottlenecks while maintaining order and efficiency.
                     </Text>
                 </Stack>
-                <Stack padding="5">
+                {/* <Stack padding="5">
                     <Heading size="lg">
                         {<Text as="b">Lesson 4: Dealing with redtapes in your organisation</Text>}
                     </Heading>
@@ -155,7 +155,7 @@ function BlogOuttakes2024() {
                         Just as multithreading improves efficiency in systems, multitasking and parallel efforts can make work environments more productive. Balancing structured processes with
                         the ability to execute tasks concurrently is how we can move past bottlenecks while maintaining order and efficiency.
                     </Text>
-                </Stack>
+                </Stack> */}
             </FullScreenSection>
             <Footer />
         </>
